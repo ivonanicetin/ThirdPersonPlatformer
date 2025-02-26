@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRB;
-    public float speed = 2f;
+    public float speed = 5f;
     public InputManager inputManager;
 
     void Start()
