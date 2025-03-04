@@ -3,6 +3,7 @@ using UnityEngine;
 public class CoinController : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 2f;
+    public bool isCoinCollected  = false;
 
     // Update is called once per frame
     void Update()
@@ -14,6 +15,7 @@ public class CoinController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            isCoinCollected = true;
             Destroy(gameObject);
         }
     }
